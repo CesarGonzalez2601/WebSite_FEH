@@ -1,0 +1,136 @@
+.gradient{
+    height: 200px;
+   background-image: linear-gradient(rgba(221,221,221,255), rgba(255,0,0,0));
+ }
+
+ .custom-block {
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  overflow: hidden;
+  padding: 30px 20px;
+}
+
+.custom-block-bg {
+
+background-color: #F4F1DE;
+}
+
+.custom-block-date-wrap {
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius-medium);
+  text-align: center;
+  padding: 20px 30px;
+}
+
+.custom-block-date {
+  font-size: var(--h1-font-size);
+}
+
+.custom-block-image-wrap {
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-block-image-wrap:hover .custom-block-image {
+  transform: scale(1.2);
+}
+
+.custom-block-image-wrap:hover .custom-block-icon {
+  opacity: 1;
+}
+
+.custom-block-image {
+  transition: all 0.3s;
+}
+
+.custom-block-image-wrap .custom-block-date-wrap,
+.custom-block-image-wrap .custom-btn-wrap {
+  position: absolute;
+  bottom: 0;
+}
+
+.custom-block-image-wrap .custom-block-date-wrap {
+  border-radius: 0;
+  left: 0;
+  width: 50%;
+  padding: 12.30px 20px;
+}
+
+.custom-block-image-wrap .custom-btn-wrap {
+  right: 0;
+  width: 50%;
+}
+
+.custom-block-image-wrap .custom-btn  {
+  border-radius: 0;
+  display: block;
+  padding: 15px 20px;
+}
+
+.custom-block-info {
+  padding-top: 10px;
+}
+
+.custom-block-image-wrap + .custom-block-info {
+  padding-top: 20px;
+}
+
+.custom-block-span {
+  color: var(--secondary-color);
+  font-weight: var(--font-weight-bold);
+  min-width: 110px;
+  margin-right: 10px;
+}
+
+.custom-block-icon {
+  background: var(--custom-btn-bg-color);
+  border-radius: var(--border-radius-large);
+  color: var(--white-color);
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: var(--h3-font-size);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.custom-block-icon:hover {
+  background: var(--custom-btn-bg-hover-color);
+  color: var(--white-color);
+}
+
+.events-section.section-bg .container > .row {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+
+
+.events-section.section-bg .container > .row .row {
+  margin: auto;
+}
+
+.events-listing-section {
+  margin-bottom: 100px;
+}
+
+.events-detail-section .custom-block-info {
+  padding: 40px 60px;
+}
+
+.events-detail-info {
+  background-color: var(--section-bg-color);
+  border-radius: var(--border-radius-medium);
+  padding: 50px 25px;
+}
+
+.events-title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-weight-medium);
+}

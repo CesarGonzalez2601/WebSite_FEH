@@ -1,1 +1,644 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+
+TemplateMo 587 Tiya Golf Club
+
+https://templatemo.com/tm-587-tiya-golf-club
+
+*/
+
+
+/*---------------------------------------
+  CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
+:root {
+  --white-color:                  #ffffff;
+  --primary-color:                #81B29A;
+  --secondary-color:              #3D405B;
+  --section-bg-color:             #F4F1DE;
+  --custom-btn-bg-color:          #F2CC8F;
+  --custom-btn-bg-hover-color:    #E07A5F;
+  --dark-color:                   #000000;
+  --p-color:                      #717275;
+  --link-hover-color:             #F2CC8F;
+
+  --body-font-family:             'DM Sans', sans-serif;
+
+  --h1-font-size:                 42px;
+  --h2-font-size:                 36px;
+  --h3-font-size:                 28px;
+  --h4-font-size:                 24px;
+  --h5-font-size:                 22px;
+  --h6-font-size:                 20px;
+  --p-font-size:                  18px;
+  --menu-font-size:               16px;
+  --btn-font-size:                14px;
+
+  --border-radius-large:          100px;
+  --border-radius-medium:         20px;
+  --border-radius-small:          10px;
+
+  --font-weight-normal:           400;
+  --font-weight-medium:           500;
+  --font-weight-bold:             700;
+}
+
+body {
+  background-color: var(--white-color);
+  font-family: var(--body-font-family); 
+  
+}
+
+
+/*---------------------------------------
+  TYPOGRAPHY               
+-----------------------------------------*/
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-medium);
+  letter-spacing: -1px;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-weight-bold);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-weight-bold);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+}
+
+h5 {
+  font-size: var(--h5-font-size);
+}
+
+h6 {
+  font-size: var(--h6-font-size);
+}
+
+p {
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-normal);
+}
+
+ul li {
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-normal);
+}
+
+a, 
+button {
+  touch-action: manipulation;
+  transition: all 0.3s;
+}
+
+a {
+  display: inline-block;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+b,
+strong {
+  font-weight: var(--font-weight-bold);
+}
+
+
+/*---------------------------------------
+  SECTION               
+-----------------------------------------*/
+
+
+
+/*---------------------------------------
+  ANIMATED HEADLINE               
+-----------------------------------------*/
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+
+.cd-words-wrapper b {
+  color: var(--link-hover-color);
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+}
+
+.cd-words-wrapper b.is-visible {
+  position: relative;
+}
+
+.no-js .cd-words-wrapper b {
+  opacity: 0;
+}
+
+.no-js .cd-words-wrapper b.is-visible {
+  opacity: 1;
+}
+
+.cd-headline.rotate-1 .cd-words-wrapper {
+  -webkit-perspective: 300px;
+  -moz-perspective: 300px;
+  perspective: 300px;
+}
+.cd-headline.rotate-1 b {
+  opacity: 0;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+.cd-headline.rotate-1 b.is-visible {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-animation: cd-rotate-1-in 1.2s;
+  -moz-animation: cd-rotate-1-in 1.2s;
+  animation: cd-rotate-1-in 1.2s;
+}
+.cd-headline.rotate-1 b.is-hidden {
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  -webkit-animation: cd-rotate-1-out 1.2s;
+  -moz-animation: cd-rotate-1-out 1.2s;
+  animation: cd-rotate-1-out 1.2s;
+}
+
+@-webkit-keyframes cd-rotate-1-in {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: rotateX(120deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+@-moz-keyframes cd-rotate-1-in {
+  0% {
+    -moz-transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -moz-transform: rotateX(120deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    -moz-transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+@keyframes cd-rotate-1-in {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: rotateX(120deg);
+    -moz-transform: rotateX(120deg);
+    -ms-transform: rotateX(120deg);
+    -o-transform: rotateX(120deg);
+    transform: rotateX(120deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes cd-rotate-1-out {
+  0% {
+    -webkit-transform: rotateX(0deg);
+    opacity: 1;
+  }
+  35% {
+    -webkit-transform: rotateX(-40deg);
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(180deg);
+    opacity: 0;
+  }
+}
+@-moz-keyframes cd-rotate-1-out {
+  0% {
+    -moz-transform: rotateX(0deg);
+    opacity: 1;
+  }
+  35% {
+    -moz-transform: rotateX(-40deg);
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    -moz-transform: rotateX(180deg);
+    opacity: 0;
+  }
+}
+@keyframes cd-rotate-1-out {
+  0% {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  35% {
+    -webkit-transform: rotateX(-40deg);
+    -moz-transform: rotateX(-40deg);
+    -ms-transform: rotateX(-40deg);
+    -o-transform: rotateX(-40deg);
+    transform: rotateX(-40deg);
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+}
+
+
+/*---------------------------------------
+  CUSTOM BUTTON               
+-----------------------------------------*/
+
+
+/*---------------------------------------
+  NAVIGATION BAR & OFFCANVAS              
+-----------------------------------------*/
+.offcanvas {
+  background-color: var(--primary-color);
+  padding: 30px;
+}
+
+.offcanvas.offcanvas-end {
+  border-left: 0;
+}
+
+.offcanvas-header .btn-close {
+  transition: all 0.3s;
+}
+
+.offcanvas-header .btn-close:hover {
+  transform: rotate(180deg);
+}
+
+.offcanvas svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.sticky-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.sticky-wrapper.is-sticky .navbar {
+  background: linear-gradient(
+    60deg,
+    rgba(159,240,255,255),
+    rgba(255,158,226,255) 100%
+  ), linear-gradient(120deg, rgba(159,240,255,255), rgba(183,190,255,255) 100%),
+  linear-gradient(120deg, rgba(251,254,207,255), rgba(255,250,208,255) 100%),
+  linear-gradient(360deg, rgba(251,254,207,255), rgba(251,254,207,255) 100%);
+  
+}
+
+
+
+.navbar {
+    background: linear-gradient(45deg,#ff95e1, #bcbef3,#f5fcd1,  #9be8ff);
+    background-size: 100% 100%;
+  z-index: 99;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  font-size: var(--h4-font-size);
+  font-weight: var(--font-weight-bold);
+  display: block;
+  color: var(--dark-color);
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-brand:hover {
+  color: var(--dark-color);
+}
+
+
+
+.navbar-brand-image {
+    height: 60px;
+    width: 200px;
+}
+
+
+
+.navbar-brand-text small {
+  display: block;
+  font-size: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  border-radius: var(--border-radius-large);
+  margin: 10px;
+  padding: 10px;
+}
+
+.navbar-nav .nav-link {
+  display: inline-block;
+  color: var(--dark-color);
+  font-size: var(--menu-font-size);
+  font-weight: var(--font-weight-medium);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link:hover {
+  color: var(--link-hover-color);
+}
+
+.navbar .dropdown-menu {
+  background: var(--white-color);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  border: 0;
+  display: inherit;
+  opacity: 0;
+  min-width: 9rem;
+  margin-top: 20px;
+  padding: 13px 0 10px 0;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+.navbar .dropdown-menu::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 15px solid var(--white-color);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+.navbar .dropdown-item {
+  display: inline-block;
+  color: var(--p-color);
+  font-size: var(--menu-font-size);
+  font-weight: var(--font-weight-medium);
+  position: relative;
+}
+
+.navbar .dropdown-item.active, 
+.navbar .dropdown-item:active,
+.navbar .dropdown-item:focus, 
+.navbar .dropdown-item:hover {
+  background: transparent;
+  color: var(--link-hover-color);
+}
+
+.navbar .dropdown-toggle::after {
+  content: "\f282";
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-size: var(--copyright-font-size);
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  left: 2px;
+  border: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    margin-top: 0;
+    pointer-events: auto;
+  }
+}
+
+
+
+
+/*---------------------------------------
+  RESPONSIVE STYLES               
+-----------------------------------------*/
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  h6 {
+    font-size: 16px;
+  }
+
+  .section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .navbar {
+    background-color: var(--secondary-color);
+  }
+
+  .navbar-nav .dropdown-menu {
+    position: relative;
+    left: 10px;
+    opacity: 1;
+    pointer-events: auto;
+    max-width: 155px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    margin: 5px;
+    padding: 0;
+  }
+
+  .hero-section {
+    position: relative;
+    top: 82px;
+    margin-bottom: 82px;
+  }
+
+  .events-listing-section {
+    margin-bottom: 50px;
+  }
+
+  .events-detail-section .custom-block-info {
+    padding: 40px;
+  }
+
+  .events-detail-info {
+    padding: 35px 25px;
+  }
+
+  .contact-info-item {
+    width: 60%;
+  }
+
+  .events-detail-section .contact-info-item {
+    width: 70%;
+  }
+
+  .section-bg-image {
+    margin-bottom: 0;
+  }
+
+  .section-bg-image-block {
+    padding: 50px;
+  }
+
+  .site-footer {
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-brand {
+    font-size: var(--p-font-size);
+  }
+
+  .navbar-brand-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar-brand-icon::after {
+    top: 5px;
+  }
+
+  .section-bg-image-block {
+    padding: 30px;
+  }
+
+  .contact-info-item {
+    width: 72%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .custom-btn {
+    font-size: 12px;
+    padding: 4px 12px;
+  }
+}
+
+

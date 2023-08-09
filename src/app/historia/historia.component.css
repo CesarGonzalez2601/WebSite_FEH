@@ -1,0 +1,51 @@
+.gradient{
+    height: 200px;
+   background-image: linear-gradient(rgba(255,0,0,0), rgba(221,221,221,255));
+ }
+
+.about-section {
+  padding-bottom: 70px;
+  background-image: url(../../../src/assets/img/historiabg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.member-block-image-wrap {
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  overflow: hidden;
+}
+
+.member-block-image-wrap:hover .member-block-image {
+  transform: scale(1.2);
+}
+
+.member-block-image-wrap:hover .social-icon {
+  opacity: 1;
+}
+
+.member-block-image-wrap .social-icon {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-large);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.5s;
+  padding: 15px 20px;
+  width: auto;
+}
+
+.member-block-image {
+  transition: all 0.3s;
+}
+
+.member-block-info {
+  padding: 10px;
+}
+
+.member-block-info h4,
+.member-block-info p {
+  margin-bottom: 0;
+}
